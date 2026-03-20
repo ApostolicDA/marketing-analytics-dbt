@@ -1,12 +1,24 @@
-# 🥪 The Jaffle Shop 🦘
+# Marketing Analytics dbt Project
 
-_powered by the dbt Fusion engine_
+## Overview
+A production-style dbt project built on BigQuery, modelling marketing and customer data for a retail business.
 
-Welcome! This is a sandbox project for exploring the basic functionality of Fusion. It's based on a fictional restaurant called the Jaffle Shop that serves [jaffles](https://en.wikipedia.org/wiki/Pie_iron).
+## Stack
+- **dbt** — data transformation and modelling
+- **BigQuery** — cloud data warehouse
+- **Looker Studio** — dashboarding and visualization
+- **Git/GitHub** — version control
 
-To get started:
-1. Set up your database connection in `~/.dbt/profiles.yml`. If you got here by running `dbt init`, you should already be good to go.
-2. Run `dbt build`. That's it!
+## Models
+### Staging
+- `stg_customers` — cleaned customer data
+- `stg_orders` — cleaned orders data
+- `stg_order_items` — cleaned order items
 
-> [!NOTE]
-> If you're brand-new to dbt, we recommend starting with the [dbt Learn](https://learn.getdbt.com/) platform. It's a free, interactive way to learn dbt, and it's a great way to get started if you're new to the tool.
+### Marts
+- `mart_channel_performance` — revenue, orders and customers by marketing channel
+- `mart_churn_risk` — customer segmentation by churn risk
+- `mart_cohort_retention` — cohort retention analysis over time
+
+## Dashboard
+Built in Looker Studio connected live to BigQuery.
