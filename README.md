@@ -35,7 +35,7 @@ This project builds a governed analytics pipeline that answers three specific bu
 ![Marketing Channel Performance](Marketing_Channel_Performance_Dash.png)
 
 ### Churn Risk & Cohort Retention
-![Churn Risk & Cohort Retention](Churn_Risk_Cohort_Retention__2_.png)
+![Churn Risk & Cohort Retention](Churn_Risk_Cohort_Retention.png)
 
 ---
 
